@@ -903,6 +903,7 @@ text-align: center;
     width: 36px;
     height: 36px;
     transition: 0.3s;
+    margin-right: 5px;
   }
   
   #contact .social-links a:hover {
