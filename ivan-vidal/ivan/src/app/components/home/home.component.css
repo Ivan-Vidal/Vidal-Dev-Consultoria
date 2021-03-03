@@ -1,4 +1,3 @@
-
 a {
   text-decoration: none;
     color: #ffffff;
@@ -16,7 +15,7 @@ a {
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Luckiest Guy", sans-serif;
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
@@ -82,7 +81,7 @@ a {
     width: 15rem;
   }
   .logo-center  {
-    width: 35rem;
+    width: 20rem;
   }
   .logo:hover {
     margin-top: -10px  !important;
@@ -350,7 +349,7 @@ a {
   }
   
   .nav-menu ul li a:hover {
-    background: #2dc997;
+    background: #010c08;
     color: #fff;
   }
   
@@ -858,10 +857,12 @@ a {
     background: #f7f7f7;
     padding: 80px 0 40px 0;
   }
-  
-  #contact #google-map {
-    height: 300px;
-    margin-bottom: 20px;
+  .contacts{
+    display: flex;
+    justify-content: space-between;
+  }
+  .info-contacts {
+text-align: center;
   }
   
   #contact .info {
