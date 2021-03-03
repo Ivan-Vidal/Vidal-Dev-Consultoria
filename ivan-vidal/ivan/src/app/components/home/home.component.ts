@@ -28,9 +28,20 @@ export class HomeComponent implements OnInit {
         contactForm.reset()
 
   } else if (!contactForm.valid){
-    alert('Preencha o form')
+    alert('Preencha todo o formulário!')
   }
- 
 }
+
+  activeModal() {
+
+ document.querySelector('.mobile-modal').classList.add('mobile-nav-active');
+
+}
+
+removeModal(){
+  document.querySelector('.mobile-modal').classList.add('mobile-nav-active');
+}
+ 
+
 
 }
