@@ -10,6 +10,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
  modal = false
+ err= false
+ send = false
 
   constructor(private http: HttpClient) { }
 
@@ -27,9 +29,15 @@ export class HomeComponent implements OnInit {
           console.log(response);
         });
         contactForm.reset()
+      this.send = true
+      setTimeout(()=>{ this.send = false }, 7000)
+
 
   } else if (!contactForm.valid){
-    alert('Preencha todo o formulário!')
+    this.err = true
+    
+    setTimeout(()=>{ this.err = false }, 7000)
+   
   }
 }
 
@@ -54,4 +62,6 @@ onClick(){
 console.log('desativei')
   }
 }
+
+
 }
