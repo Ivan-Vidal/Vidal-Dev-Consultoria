@@ -30,13 +30,13 @@ export class HomeComponent implements OnInit {
         });
         contactForm.reset()
       this.send = true
-      setTimeout(()=>{ this.send = false }, 7000)
+      setTimeout(()=>{ this.send = false }, 5000)
 
 
   } else if (!contactForm.valid){
     this.err = true
     
-    setTimeout(()=>{ this.err = false }, 7000)
+    setTimeout(()=>{ this.err = false }, 5000)
    
   }
 }

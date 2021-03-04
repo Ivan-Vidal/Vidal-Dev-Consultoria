@@ -657,7 +657,7 @@ color: rgb(255, 217, 0);
     text-align: center;
     width: 72px;
     height: 72px;
-    background: #2dc997;
+    background: #00A3FF;
   }
   
   #services .icon a {
@@ -671,11 +671,11 @@ color: rgb(255, 217, 0);
   
   #services .box:hover .icon {
     background: #fff;
-    border: 2px solid #2dc997;
+    border: 2px solid #006980;
   }
   
   #services .box:hover .icon i {
-    color: #2dc997;
+    color: #006980;
   }
   
   #services .box:hover .icon a {
@@ -709,15 +709,22 @@ color: rgb(255, 217, 0);
     background-size: cover;
     padding: 80px 0;
   }
+  .autor {
+    color: honeydew;
+    text-align: right;
+    font-style: italic;
+  }
   
   #call-to-action .cta-title {
     color: #fff;
     font-size: 28px;
     font-weight: 700;
+    text-align: justify;
   }
   
   #call-to-action .cta-text {
     color: #fff;
+    text-align: justify;
   }
   
   @media (min-width: 769px) {
@@ -744,8 +751,8 @@ color: rgb(255, 217, 0);
   }
   
   #call-to-action .cta-btn:hover {
-    background: #2dc997;
-    border: 2px solid #2dc997;
+    background: #006980;
+    border: 2px solid #006980;
   }
   
   /* Portfolio Section
@@ -782,7 +789,7 @@ color: rgb(255, 217, 0);
   }
   
   #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-    background: #2dc997;
+    background: #006980;
     color: #fff;
   }
   
@@ -808,7 +815,7 @@ color: rgb(255, 217, 0);
   
   #portfolio .portfolio-item .details {
     height: 50px;
-    background: #2dc997;
+    background: #006980;
     position: absolute;
     width: 100%;
     height: 50px;
@@ -886,7 +893,7 @@ color: rgb(255, 217, 0);
   }
   
   #team .member .social a:hover {
-    color: #00A3FF;
+    color: #006980;
   }
   
   #team .member .social i {
@@ -904,10 +911,14 @@ color: rgb(255, 217, 0);
     display: flex;
     justify-content: space-between;
   }
+  .f{
+    padding-bottom: 20px !important;
+  }
   .info-center{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
   }
   .rede{
     font-size: 1.3rem;
