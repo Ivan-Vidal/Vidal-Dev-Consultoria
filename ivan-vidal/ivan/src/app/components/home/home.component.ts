@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
@@ -9,6 +9,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+ modal = false
 
   constructor(private http: HttpClient) { }
 
@@ -33,15 +34,24 @@ export class HomeComponent implements OnInit {
 }
 
   activeModal() {
-
- document.querySelector('.mobile-modal').classList.add('mobile-nav-active');
-
+let close = document.querySelector('.fa-bars')
+    close.classList.add('fa-times')
 }
 
-removeModal(){
-  document.querySelector('.mobile-modal').classList.add('mobile-nav-active');
+removeModal() {
+ document.querySelector('.fa-times').classList.remove('fa-times')
 }
- 
 
+onClick(){
 
+  if (!this.modal) {
+    this.modal = true
+    this.activeModal()
+    console.log('ativei')
+  } else if (this.modal) {
+    this.modal = false
+    this.removeModal()
+console.log('desativei')
+  }
+}
 }

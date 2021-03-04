@@ -83,8 +83,14 @@ a {
   .logo-center  {
     width: 20rem;
   }
-  .logo:hover {
-    margin-top: -24px  !important;
+  @media(min-width: 1080px){
+    .logo {
+      width: 10rem;
+    }
+    .logo-center {
+      width: 30rem;
+    }
+
   }
   
   #header #logo {
@@ -391,11 +397,10 @@ a {
     bottom: 0;
     z-index: 998;
     background: rgba(52, 59, 64, 0.9);
-    left: -260px;
+    /*left: -260px;*/
     width: 260px;
     overflow-y: auto;
     transition: 0.4s;
-    display: flex;
   }
   
   #mobile-nav ul {
@@ -446,14 +451,14 @@ a {
   }
   
   .mobile-body-overly {
-    width: 400px;
+    width: 100%;
     height: 100%;
     z-index: 800;
     top: 0;
     left: 0;
     position: fixed;
     background: rgba(52, 59, 64, 0.9);
-    
+    /*display:none;*/
   }
   
   /* Mobile Nav body classes */

@@ -6,7 +6,7 @@
         <!-- Uncomment below if you prefer to use a text logo -->
       </div>
       
-      <button (click)="activeModal()" type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
+      <button (click)="onClick()" type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
@@ -18,11 +18,10 @@
           <li><a href="home#contact">Contato</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
-<div   id="mobile-nav">
-
- <nav  class="mobile-body-overly">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
+<div *ngIf="modal" class="mobile-body-overly">
+ <nav  id="mobile-nav">
+        <ul>
+          <li class="menu-active"><a  href="#hero">Home</a></li>
           <li><a href="home#about">Sobre</a></li>
           <li><a href="home#services">Serviços</a></li>
           <li><a href="home#portfolio">Portfolio</a></li>
