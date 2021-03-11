@@ -86,10 +86,11 @@ a {
   .logo-center  {
     width: 20rem;
   }
-  @media(min-width: 1080px){
+  @media(min-width: 980px){
     .logo {
       width: 10rem;
-    }
+      margin-top: -10px!important;
+   }
     .logo-center {
       width: 30rem;
     }
