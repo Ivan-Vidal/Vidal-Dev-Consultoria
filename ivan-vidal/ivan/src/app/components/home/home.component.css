@@ -37,7 +37,7 @@ a {
   .back-to-top {
     position: fixed;
     display: none;
-    background: rgba(0, 0, 0, 0.2);
+    background:#1573c0;
     color: #fff;
     padding: 6px 12px 9px 12px;
     font-size: 16px;
@@ -45,6 +45,9 @@ a {
     right: 15px;
     bottom: 15px;
     transition: background 0.5s;
+  }
+  .block {
+    display: block !important;
   }
   
 @media (max-width: 768px) {
@@ -60,7 +63,7 @@ a {
   }
   
   .back-to-top:hover {
-    background: #2dc997;
+    background: #006980;
     color: #fff;
   }
   
@@ -231,6 +234,9 @@ a {
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+  .nav-scroll {
+   background-color: rgba(0, 0, 0, 0.9);
   }
   
   .nav-menu ul {
@@ -443,11 +449,11 @@ a {
   }
   
   #mobile-nav ul .menu-has-children i.fa-chevron-up {
-    color: #2dc997;
+    color: #006980;
   }
   
   #mobile-nav ul .menu-item-active {
-    color: #2dc997;
+    color: #006980;
   }
   
   .mobile-body-overly {

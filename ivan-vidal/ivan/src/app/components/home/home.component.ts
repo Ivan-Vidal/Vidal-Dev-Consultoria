@@ -11,12 +11,16 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class HomeComponent implements OnInit {
  modal = false
  err= false
- send = false
+ send = false;
+ windowScrolled = false
+ active = false
+
+ 
 
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-  
+  this.onScroll()
   }
 
   OnSubmit(contactForm: NgForm){
@@ -62,6 +66,27 @@ onClick(){
 console.log('desativei')
   }
 }
+
+onScroll() {
+  let backBlock = false
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    backBlock = true
+   console.log(backBlock)
+  } else {
+    console.log('errou')
+  }
+}
+
+
+@HostListener ("window: scroll", []) 
+onWindowScroll () { 
+    if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 10 ){
+        this.windowScrolled = true; 
+    }    else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop <10) { 
+        this.windowScrolled = false; 
+    } 
+} 
+
 
 
 }
