@@ -27,9 +27,14 @@ export class HomeComponent implements OnInit {
     if (contactForm.valid) {
       let email = contactForm.value;
       const headers = new HttpHeaders({ 'Content-type':  'application/json'})
-      this.http.post('https://formspree.io/f/xeqpwrgv', {name: email.name, replyto: email.email, subject: email.subject, message: email.message }, { 'headers': headers }).subscribe(
-        response => {
-       
+      this.http.post('https://formspree.io/f/xeqpwrgv', {
+                    name: email.name,
+                    replyto: email.email,
+                    subject: email.subject,
+                    message: email.message
+                   },
+               { 'headers': headers }).subscribe(
+        response => {       
           console.log(response);
         });
         contactForm.reset()
