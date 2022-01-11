@@ -1,0 +1,479 @@
+<header id="header" class="" [ngClass]="{'header-fixed': windowScrolled }">
+  <div class="container">
+    <div id="logo" class="pull-left">
+      <a href="#hero"><img class="logo" src="../../../assets/img/logo-vidal.svg" alt="Vidal Dev Consultoria"></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+    </div> 
+    <button (click)="onClick()" type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li class="menu-active"><a href="#hero">Home</a></li>
+        <li><a href="home#about">Sobre</a></li>
+        <li><a href="home#services">Serviços</a></li>
+        <li><a href="home#portfolio">Portfolio</a></li>
+        <li><a (click)="removeModal()" href="home#team">Equipe</a></li> 
+        <li><a href="home#contact">Contato</a></li>
+      </ul>
+    </nav><!-- #nav-menu-container -->
+    <div *ngIf="modal" class="mobile-body-overly">
+      <nav id="mobile-nav">
+        <ul>
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="home#about">Sobre</a></li>
+          <li><a href="home#services">Serviços</a></li>
+          <li><a href="home#portfolio">Portfolio</a></li>
+          <li><a href="home#team">Equipe</a></li>
+          <li><a href="home#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header><!-- #header -->
+
+  <section id="hero">
+    <div class="hero-container">
+      <img class="logo-center" src="../../../assets/img/logo-vidal.svg" alt="Vidal Dev Consultoria">
+      <h2><strong><i>Desenvolvendo soluções para o mundo</i></strong></h2>
+      <a href="#about" class="btn-get-started">Iniciar</a>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">Sobre a Vidal Dev Consultoria</h2>
+            <p>
+             Empresa jovem criada em 2021 pelo Ivan Vidal, fundador e CEO atual a frente de projetos 
+             utilizando tecnologias atuais e funcionais. A empresa está focada em desenvolvimento web e de aplicativos.
+             A missão da empresa é mudar o mundo utilizando a tecnologia. 
+            </p>
+            <h2 class="title">Diferenciais</h2>            
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-photo"></i></div>
+              <h4 class="title"><a href="#">Fidelidade de Interfaces</a></h4>
+              <p class="description">Realizamos construção de cada projeto pensando na melhor experiência do usuário, seguindo fielmente os protótipos.</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fas fa-laptop-code"></i></div>
+              <h4 class="title"><a href="">Clean Code</a></h4>
+              <p class="description">No desenvolvimento de projetos presamos pela qualidade do código, usando as melhores práticas do mercado </p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">Metodologias Ágeis</a></h4>
+              <p class="description">Utilizamos metodologias de desenvolvimento onde temos, encontros para colher feedbacks e alinhamentos para agilizar o processo de construção do projeto.</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Tecnologias</h3>
+          <p class="section-description">Utilizamos tecnologias modernas e práticas para criação de nossos projetos.</p>
+        </div>
+        <div class="row counters">
+  
+                  <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up"><i id="Js" class="fab fa-js-square"></i></span>
+            <p>JavaScript(ES20)</p>
+                  </div>
+  
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up"><i id="Angular" class="fab fa-angular"></i></span>
+            <p>Angular</p>
+                  </div>
+  
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up"><i id="Rjs" class="fab fa-react"></i>
+            </span>
+            <p>React JS</p>
+                  </div>
+  
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up"><i id="Git" class="fab fa-git-alt"></i>
+            </span>
+            <p>Git</p>
+                  </div>
+  
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up"><i id="Njs" class="fab fa-node-js"></i></span>
+            <p> Node JS</p>
+                  </div>
+  
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up"><i id="Rn" class="fab fa-react"></i></span>
+            <p>React Native</p>
+                  </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up"><i id="Boot" class="fab fa-bootstrap"></i></span>
+            <p>Bootstrap</p>
+                  </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up"><i id="Material"class="fab fa-angular"></i></span>
+            <p>Angular Material</p>
+                  </div>
+  
+              </div>
+  
+      </div>
+    </section>
+    <!-- #facts -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title w">Serviços</h3>
+          <p class="section-description">Os nossos serviços estão distribuidos nas categorias abaixo.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fas fa-laptop"></i></a></div>
+              <h4 class="title"><a href="">Desenvolvimento web</a></h4>
+              <p class="description">Atuamos no desenvolvimento de sistemas utilizados diretamente na web </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fas fa-mobile-alt"></i></a></div>
+              <h4 class="title"><a href="">Desenvolvimento de App</a></h4>
+              <p class="description">Construimos aplicativos para a maior variedade de negócios.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+              <h4 class="title"><a href="">Prototipação</a></h4>
+              <p class="description">Utilizamos as melhores práticas do mercado para desenvolver protótipos visando a melhor experiência do usuário.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fas fa-chart-line"></i></a></div>
+              <h4 class="title"><a href="">Dashboards</a></h4>
+              <p class="description">Desenvolvimento de sistemas interno acessados pela internet, para melhor controle de seu negócio, sem necessidade de hardwares poderosos.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+    Call To Action Section
+    ============================-->
+    <section id="call-to-action">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-lg-9  text-right text-lg-left">
+            <p class="cta-text"> 
+             <i class="fas fa-quote-left"></i> O valor real dos testes não é que eles detectam bugs no código, mas que detectam inadequações nos métodos, concentração e habilidades daqueles que projetam e produzem o código. <i class="fas fa-quote-right"></i></p>
+
+                <small class="autor">Charles Antony Richard Hoare</small> 
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#contact">Fale conosco</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Portfolio</h3>
+          <p class="section-description">Os nossos projetos criados até o momento, estão divididos por categorias</p>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">Todos</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Cards</li>
+              <li data-filter=".filter-logo">LogoMarca</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="portfolio-wrapper">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="../../assets/img/portfolio/app3.jpg" alt="">
+              <div class="details">
+                <h4>App 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a  target="_blank" href="http://www.moneysaver.ml">
+              <img src="../../assets/img/money-web.png" alt="moneysaver">
+              <div class="details">
+                <h4>Money Saver</h4>
+                <span>Economizador de dinheiro</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="../../assets/img/portfolio/app2.jpg" alt="">
+              <div class="details">
+                <h4>App 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="../../../assets/img/portfolio/card1.jpg" alt="">
+              <div class="details">
+                <h4>Card 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="../../../assets/img/crud.png" alt="">
+              <div class="details">
+                <h4>Sistema CRUD Angular 9</h4>
+                <span>Exemplo de sistema de cadastro</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a target="_blank"  href="https://lab-movies-snowy.vercel.app/home">
+              <img src="../../assets/img/lab-web.png" alt="LabMovies">
+              <div class="details">
+                <h4>Lab Movies</h4>
+                <span>Encontre detalhes do seu filme favorito</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="../../../assets/img/portfolio/card3.jpg" alt="">
+              <div class="details">
+                <h4>Card 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="../../assets/img/portfolio/app1.jpg" alt="">
+              <div class="details">
+                <h4>App 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="https://angular-crud-theta.vercel.app/" target="_blank">
+              <img src="../../../assets/img/portfolio/logo1.jpg" alt="">
+              <div class="details">
+                <h4>Logo 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="../../../assets/img/portfolio/logo3.jpg" alt="">
+              <div class="details">
+                <h4>Logo 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="https://stoplittle.vercel.app/" target="_blank">
+              <img src="../../../assets/img/stoplittle.png" alt="">
+              <div class="details">
+                <h4>StopLittle</h4>
+                <span> Saia um pouco desse computador e exercíte-se</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="../../../assets/img/portfolio/logo2.jpg" alt="">
+              <div class="details">
+                <h4>Logo 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title w">Equipe</h3>
+          <p class="section-description">Aqui você pode ver os colaboradores de nossa empresa</p>
+        </div>
+        <div class="row" style="justify-content: center;">
+          <div class="col-lg-3 col-md-6">
+            <div class="member" >
+              <div class="pic"><img src="../../assets/img/perfil.jpeg" alt=""></div>
+              <h4>Ivan Vidal</h4>
+              <span>FullStack Developer</span>
+              <div class="social">
+                <a href="https://github.com/Vidal-Dev-Consultoria" target="_blank" class="github"><i class="fa fa-github"></i></a>
+              <a href="https://www.instagram.com/vidaldevconsultoria/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox?compose=CllgCJlJVtNjwXXkXJcSwlWlHKlFjCcsKHPhbwJFCzbqTfLnchWHTJtrqXVTmHDWjKRPhdZCztL" target="_blank" class="google-plus"><i class="fab fa-google-plus-g"></i></a>
+              <a target="_blank"  href="https://www.linkedin.com/company/vidal-dev-consultoria" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Contato</h3>
+          <p class="section-description f">Se interessou pelos nossos serviços ou tem alguma dúvida? Envie sua mensagem abaixo! </p>
+        </div>
+      </div>
+
+      <!-- Uncomment below if you wan to use dynamic maps -->
+     
+      <div class="container wow fadeInUp mt-5">
+        <div class="row contacts">
+  
+          <div class="col-lg-3 col-md-4 info-contacts">
+   <div class="info-center">
+          <div class="info">
+             <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Barueri - SP</p>
+              </div>
+  
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>ivanvidal.dev@gmail.com</p>
+              </div>
+  
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+55 (11) 9 6834-4811</p>
+              </div>
+            </div>
+          </div>
+            <div class="social-links">
+              <h1 class="rede">Rede sociais</h1>
+              <a href="https://api.whatsapp.com/send?L=pt_BR&phone=5511968344811&text=Tenho interesse em seus serviços." target="_blank" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+              <a href="https://github.com/Vidal-Dev-Consultoria" target="_blank" class="github"><i class="fa fa-github"></i></a>
+              <a href="https://www.instagram.com/vidaldevconsultoria/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox?compose=CllgCJlJVtNjwXXkXJcSwlWlHKlFjCcsKHPhbwJFCzbqTfLnchWHTJtrqXVTmHDWjKRPhdZCztL" target="_blank" class="google-plus"><i class="fab fa-google-plus-g"></i></a>
+              <a target="_blank"  href="https://www.linkedin.com/company/vidal-dev-consultoria" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+  
+          </div>
+  
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div *ngIf="send"  class="sendmessage">Sua mensagem foi enviada com sucesso!</div>
+              <div *ngIf="err" class="errormessage"> Mensagem não enviada!
+                Preencha todo o Formulário </div>
+              <form  method="POST" (ngSubmit)="OnSubmit(contactForm)" role="form" #contactForm="ngForm" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" ngModel #name="ngModel" placeholder="Seu Nome" required data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" ngModel  #email="ngModel" name="email" id="email" placeholder="Seu E-mail" required data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" ngModel  #subject="ngModel" name="subject" id="subject" required placeholder="Assunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control"   ngModel  #message="ngModel" name="message" rows="5" required data-msg="Escreva alguma coisa para nós" placeholder="Escreva alguma coisa para nós"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Enviar</button></div>
+              </form> 
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+  
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; 2021 - <strong>Vidal Dev Consultoria </strong>
+      </div>
+      </div>
+    
+  </footer><!-- #footer -->
+
+  <a href="home#hero" class="back-to-top" [ngClass]="{'block': windowScrolled }"  ><i class="fas fa-chevron-up"></i></a>
